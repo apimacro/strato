@@ -1,0 +1,9 @@
+COMMAND,VALUE
+goto, https://strato.pl/auth/login.html
+focus, input.text.login
+write_from_file, strato.pl/.user
+focus, input.text.password
+write_from_file, strato.pl/.pass
+wait, 3000
+click, input.mid.button-green-large
+screenshot, screen.png
